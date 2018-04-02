@@ -1,0 +1,13 @@
+/*设置各个元素的颜色属性*/
+
+.menu-text {
+	color: black;
+}
+
+.navbar-nav>.active>a {
+	
+}
+
+.navbar-nav>li>a:hover {
+	background: #eee;
+}

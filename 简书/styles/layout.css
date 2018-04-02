@@ -1,0 +1,46 @@
+/*用于放置内边距、背景及定位等*/
+/**************************************************/
+ul.navbar-nav {
+	display: inline-block;
+	height: 100%;
+	padding-left: 105px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+ /*导航栏列表宽度*****************************/
+.navbar-nav li {
+	display: inline-block;
+	height: 100%;
+	width: 64px;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 25px;
+}
+li.search {
+	width: auto;
+	margin-left: 20px;
+	text-align: center;
+}
+/**************************************/
+
+.search-input {
+
+}
+
+li a {
+	display: block;
+	text-decoration: none;
+	box-sizing: border-box;
+	width: 94px;
+	height: 100%;
+	padding: 15px;
+}
+li.search form {
+	display: block;
+	position: relative;
+	padding: 10px;
+}
+.navbar {
+
+}

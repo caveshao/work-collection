@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>简书-创作你的创作</title>
+    <link rel="stylesheet" type="text/css" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <header>
+    <!--全局顶部导航栏-->
+	<nav class="navbar">
+        <a class="logo" href="#"><img src="images/logo-58fd04f6f0de908401aa561cda6a0688.png" alt="Logo"/></a>
+    <!--右上角-->
+    <!--写文章-->
+         <a href="#" class="btn write-btn">
+         	<i class="fa fa-pencil"></i>
+         	写文章
+         </a>
+    <!--下拉菜单-->
+        <div class="user" id="auser">
+        	<a href="#" class="avatar">
+        		<img src="images/avator.jpg">
+        		<span class="caret"></span>
+        	</a>
+        </div>
+    <!--导航栏中的导航-->
+       <ul class="nav navbar-nav"> 
+		 <li class="active"><a href="#">
+		 	<span class="menu-text">发现</span>
+		 </a></li>
+		 <li><a href="#">
+		 	<span class="menu-text">关注</span>
+		 </a></li>
+		 <li><a href="#">
+		 	<span class="menu-text">消息</span>
+		 </a></li>
+		 <li class="search">
+		   <form>
+		 	 <input type="text" name="q" id="q" placeholder="搜索" class="search-input"/>
+		 	 <a href="#" class="search-button">
+		 	 <i class="fa fa-search"></i>
+		     </a>
+		   </form>
+		  </li>		 		 
+	   </ul>
+	</nav>
+  </header>
+  <!--分版块进行设计-->
+  <div class="container index">
+
+    <div class="row">
+
+      <div class="left-col">
+
+        <div class="main-top">
+        	<a href="#" class="avatar">
+        		<img src="images/avator.jpg">
+        	</a>
+        	<div class="information">
+        	<a href="#" class="name">牛鼻子老邵</a>
+        	<i class="fa fa-mars-stroke"></i>
+        	</div>
+        	<div class="info">
+        		<ul>
+        			<li>
+        			<div class="meta-block">
+        				<a href="#">
+        					<p>3</p>
+        					<span>关注</span>
+        					<i class="fa fa-angle-right">
+        						
+        					</i>
+        				</a>
+
+        			</div>
+        			</li>
+        			<li>
+        			    <div class="meta-block">
+        				<a href="#">
+        					<p>10</p>
+        					<span>粉丝</span>
+        					<i class="fa fa-angle-right">
+        						
+        					</i>
+        				</a>
+        				</div>
+        			</li>
+        			<li>
+        			    <div class="meta-block">
+        				<a href="#">
+        					<p>16</p>
+        					<span>文章</span>
+        					<i class="fa fa-angle-right">
+        						
+        					</i>
+        				</a>
+        				</div>
+        			</li>
+        			<li>
+        			    <div class="meta-block">
+        				<a href="#">
+        					<p>12087</p>
+        					<span>字数</span>
+        				</a>
+        				</div>
+        			</li>
+
+        			<li>
+        			    <div class="meta-block">
+        				<a href="#">
+        					<p>31</p>
+        					<span>收获喜欢</span>
+        					<i class="fa fa-angle-right">
+        						
+        					</i>
+        				</a>
+        				</div>
+        			</li>
+        		</ul>
+        	</div>
+        </div>
+
+        <ul id="trigger-menu">
+        	<li class="trigger-li" id="attention-user"><a href="#">
+        		关注用户
+        	</a></li>
+
+        	<li class="trigger-active" id="fan"><a href="#">
+        		粉丝
+        	</a></li>
+        </ul>
+
+        <div id="list-container">
+        <ul>
+                  
+        	<li>
+        	 <!--相关用户的数据-->
+        	<a href="#" class="avatar">
+        		<img src="images/卖菜诗人.jfif">
+        	</a>
+
+        	<div class="other-info">
+        		<a href="#" class="other-name">
+        			卖菜诗人
+        		</a>
+
+        		<div class="other-meta">
+        			<span>关注 6  </span>
+        			<span>粉丝 666  </span>
+        			<span>文章 66  </span>
+        			<span>文集 6  </span>
+        		</div>
+
+        		<div class="other-meta">
+        			写了两万零一千二百字，获得三百零六个喜欢。
+        		</div>
+        	</div>
+
+        	<a href="#" id="button">
+        		<i class="fa fa-plus"></i>
+        		关注
+        	</a>
+
+        	</li>
+          <!--第一个用户信息结束-->
+
+        </ul>
+
+        </div>
+
+        <div id="attention-container">
+        <ul>
+                  
+        	<li>
+        	 <!--相关用户的数据-->
+        	<a href="#" class="avatar">
+        		<img src="images/罗.jpg">
+        	</a>
+
+        	<div class="other-info">
+        		<a href="#" class="other-name">
+        			罗衣一时聚散
+        		</a>
+
+        		<div class="other-meta">
+        			<span>关注 116  </span>
+        			<span>粉丝 1682  </span>
+        			<span>文章 149  </span>
+        			<span>文集 7  </span>
+        		</div>
+
+        		<div class="other-meta">
+        			写了二十六万六千九百九十九字，获得五千七百九十一个喜欢。
+        		</div>
+        	</div>
+
+        	<a href="#" id="button">
+        		<i class="fa fa-check"></i>
+        		已关注
+        	</a>
+
+        	</li>
+          <!--第一个用户信息结束-->
+
+        </ul>
+
+        </div>
+  
+      </div>
+       <!--个人详细信息-->
+      <div class="right-col">
+    	<div class="tital">个人介绍</div>
+    	<a href="#" class="function-btn" id="change">
+    	  <i class="fa fa-pencil-square-o"></i>
+    	  编辑
+    	</a>
+
+    	<div class="description">
+    	    <form id="transform"></form>
+    		<div class="js-intro">学习，思考；运用，思考；总结，思考。</div>
+    	</div>
+
+    	<ul class="user-dynamic">
+
+    		<li><i class="fa fa-columns"></i>
+    		我关注的文集/专题
+    		</li>
+
+    		<li><i class="fa fa-heart-o"></i>
+    		我喜欢的文章
+    		</li>
+
+    	</ul>
+
+    	<div class="topic">
+    	  <div class="tital">我创建的专题</div>
+    	  <a href="#" class="function-btn">
+    	  <i class="fa fa-plus"></i>
+    	  新建专题
+    	  </a>
+    	  <div>
+    	    <img src="images/plum.jpeg">
+    	    <a href="#" class="name">傲梅将军传</a>
+    	  </div>
+    	</div>
+
+    	<div class="collection">
+    	 <div>我的文集</div>
+    	 <ul>
+    			<li><i class="fa fa-book"></i> 漫漫集</li>
+    			<li><i class="fa fa-book"></i> 傲梅将军传</li>
+    			<li><i class="fa fa-book"></i> 脏词滥调</li>
+    			<li><i class="fa fa-book"></i> 读书集</li>
+    			<li><i class="fa fa-book"></i> 无聊集</li>
+    		</ul>
+    	</div>
+      </div>
+  	
+    </div>
+  </div> 
+
+  <footer class="container">	
+  </footer>
+  <script type="text/javascript" src="scripts/addLoadEvent.js"></script>
+  <script type="text/javascript" src="scripts/showMenu.js"></script>
+  <script type="text/javascript" src="scripts/triggerMenu.js"></script>
+  <script type="text/javascript" src="scripts/triggerList.js"></script>
+
+</body>
+</html>
