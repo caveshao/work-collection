@@ -1,0 +1,29 @@
+/*顶部*/
+#header {
+    background-color: #FFFFFF;
+}
+
+.topline {
+    border-bottom-color: #d7bdad;
+    border-top-color: #fceeec;
+}
+
+.info li {
+    color: #FF70BC;
+}
+
+.log > a {
+    color: #E40082;
+}
+
+section#content {
+    background-color: white;
+}
+
+footer#footer {
+    background-color: #FF70Bc;
+}
+
+#footer h2 {
+    color: white;
+}
