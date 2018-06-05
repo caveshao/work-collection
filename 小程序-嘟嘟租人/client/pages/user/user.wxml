@@ -1,0 +1,28 @@
+<view class="container">
+    <view class="userinfo" wx:if="{{!logged}}">
+        <button class="login" open-type="getUserInfo" bindgetuserinfo="login">登录</button>
+    </view>
+    <view class="userinfo"wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="userinfo-gender">{{userInfo.gender===1?'男':'女'}}</text>
+    </view>
+    <view class="user-address">
+        <label class="address-input">
+            地址:
+            <input class="" type="text" placeholder="{{userAddress? userAddress:'无地址，点击修改输入'}}" 
+            disabled="{{!modify}}" value="{{userAddress}}" bindblur="addressModify" maxlength="14" />
+        </label>
+        <button class="address-modify" bindtap="addressModify">修改</button>
+    </view>
+    <view class="user-phone">
+        <label class="phone-input">
+            电话:
+            <input class="" type="number" placeholder="{{userPhone? userPhone:'点击修改后在输入框输入'}}"
+            disabled="{{!setPhone}}" value="{{userPhone}}" bindblur="phoneModify" maxlength="11"/>
+        </label>
+        <button class="phone-modify" bindtap="phoneModify">修改</button>
+    </view>
+</view>
+    
+

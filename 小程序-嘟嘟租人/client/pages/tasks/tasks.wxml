@@ -1,0 +1,40 @@
+<!-- tasks.wxml -->
+<view>
+  <view id="container" class="container log-list" wx:if="{{ifAccess}}">
+    <zan-capsule class="zan-font-30" color="#F69581" leftText="任务" rightText="！！新发布任务会覆盖原来任务"  />
+    <zan-field title="{{ field.title }}" placeholder="{{ field.placeholder }}" focus="{{ field.focus }}"
+               value="{{ postTask }}" bind:change="handleFieldChange"></zan-field>
+    <view class="label-box">
+      <text class="label">数量</text>
+      <zan-stepper stepper="{{ amountStepper.stepper }}" min="{{ amountStepper.min }}" max="{{ amountStepper.max }}"
+                   bind:change="handleAmountChange"></zan-stepper>
+      <text class="label">佣金/价格</text>
+      <zan-stepper stepper="{{ priceStepper.stepper }}" min="{{ priceStepper.min }}" max="{{ priceStepper.max }}"
+                   bind:change="handlePriceChange"></zan-stepper>
+    </view>
+    <zan-button type="primary large" disabled="{{!postTask}}" bindtap="postTasks"plain>发布任务</zan-button>
+    <view class="posttedTask">
+      <zan-capsule class="zan-font-30" color="#F69581" leftText="任务" rightText="我发布的 钱款请当面付清"  />
+      <zan-card card-class="test-card"
+                thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+                price="{{posttedTask.price}}" title="【{{posttedTask.task}}】" num="{{posttedTask.amount}}"
+                desc="{{posttedTask.address}}" status="{{posttedTask.status === 1?'已接取':'未接取'}}"></zan-card>
+      <view class="employee-info" wx:if="{{posttedTask.employee}}">
+        <zan-tag type="primary">接单人：{{posttedTask.employee}}</zan-tag>
+        <zan-tag type="danger">联系电话：{{posttedTask.employeePhone}}</zan-tag>
+      </view>
+      <zan-button type="primary large" bindtap="taskCompletion"plain>确认完成</zan-button>
+      <zan-button type="primary large" bindtap="removeTask"plain>撤回任务</zan-button>
+    </view>
+    <view class="gettedTask">
+      <zan-capsule class="zan-font-30" color="#F69581" leftText="任务" rightText="我领取的"  />
+      <block wx:for="{{gettedTasks}}" wx:for-item="task" wx:key="index">
+        <zan-card card-class="test-card"
+                  thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+                  price="{{task.price}}" title="{{task.customer}}【{{task.task}}】" num="{{task.amount}}"
+                  desc="{{task.address}}" status="{{task.phone}}"></zan-card>
+      </block>
+    </view>
+  </view>
+  <view wx:else>请登录并填写接收地址与联系电话</view>
+</view>

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "嘟 嘟 租 人",
+  "usingComponents": {
+    "zan-button": "../../dist/btn/index",
+    "zan-field": "../../dist/field/index",
+    "zan-stepper": "../../dist/stepper/index",
+    "zan-capsule": "../../dist/capsule/index",
+    "zan-card": "../../dist/card/index",
+    "zan-tag": "../../dist/tag/index"
+  }
+}

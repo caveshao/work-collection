@@ -1,0 +1,71 @@
+button.login {
+    background-color: #F69581;
+    color: white;
+}
+
+button.login i {
+    color: #11c9ee;
+}
+
+.userinfo {
+    display: flex;
+    width: 100%;
+    min-height: 265rpx;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    padding-bottom: 15rpx;
+    border-bottom: 1px solid #eeeeee;
+}
+
+image.userinfo-avatar {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+} 
+
+.userinfo .userinfo-nickname {
+    font-weight: 900;
+    word-break: break-all;
+    text-align: center;
+}
+
+.userinfo .userinfo-gender {
+      color: #11c9ee;
+      align-self: flex-end;
+}
+
+/**地址修改栏
+*/
+.user-address ,
+.user-phone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 30rpx 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.address-input,
+.phone-input {
+    display: block;
+    flex-grow:4;
+}
+
+.address-input>input,
+.phone-input>input {
+    color: #11c9ee;
+}
+
+.address-modify ,
+.phone-modify{
+    flex-grow: 1;
+    color:white;
+    background-color: #F69581;
+}

@@ -1,0 +1,9 @@
+/**index.wxss**/
+
+.task-card {
+  width: 100%;
+}
+
+zan-button.get-btn {
+  margin-left: 23rpx;
+}

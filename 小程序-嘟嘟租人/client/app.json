@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/tasks/tasks",
+        "pages/user/user"
+    ],
+    "tabBar": {
+        "color": "white",
+        "backgroundColor": "#F69581",
+        "selectedColor": "#11c9ee",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "src/icon/icon-index.png",
+                "selectedIconPath": "src/icon/icon-index.png"
+            },
+            {
+                "pagePath": "pages/tasks/tasks",
+                "text": "任务",
+                "iconPath": "src/icon/icon-tasks.png",
+                "selectedIconPath": "src/icon/icon-tasks.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "用户",
+                "iconPath": "src/icon/icon-user.png",
+                "selectedIconPath": "src/icon/icon-user.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F69581",
+        "navigationBarTitleText": "嘟 嘟 租 人",
+        "navigationBarTextStyle": "white"
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    }
+}
